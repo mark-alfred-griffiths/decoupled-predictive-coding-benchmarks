@@ -71,7 +71,7 @@ The repository centers around comparisons between:
 |---|---|
 | Backpropagation | Conventional gradient-based optimization |
 | Predictive Coding (PC) | Iterative inference-based learning dynamics |
-| Decoupled PC | Predictive coding with decoupled or amortized synthetic gradient estimation |
+| IL-ASGN / Decoupled PC | Predictive coding with decoupled or amortized synthetic gradient estimation |
 
 The decoupled framework explores mechanisms inspired by:
 
@@ -309,6 +309,21 @@ Examples:
 bash run_configs/pc_testing/run_pc_testing.sh
 bash run_configs/main/run_robustness_to_noise_testing.sh
 ```
+
+## PC Equilibrium Benchmark Notes (`run_pc_testing.sh`)
+
+The `run_configs/pc_testing/run_pc_testing.sh` helper runs a sweep via:
+
+- `scripts/plotting/pc_testing/plot_pc_equilibrium.py`
+- with runner `core/train_path_integral_pc.py`
+- across seeds and solver settings (`dt`, `rollout-tol`, `rollout-steps`, `oracle-every`).
+
+Most importantly, it evaluates two oracle-blend cap settings:
+
+- `--lambda-cap 0` (oracle contribution clamped off), and
+- `--lambda-cap 1` (oracle contribution allowed up to full blend).
+
+This is the mechanism used in this repo to compare the PC-style condition against the IL-ASGN-style capped-blend condition in the equilibrium-step plots.
 
 # Data and Artifact Management
 
