@@ -1,0 +1,34 @@
+# Python cache/artifacts
+__pycache__/
+*.py[cod]
+*.so
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Local IDE files
+.vscode/
+.idea/
+
+# Runtime/log files
+*.log
+running*.txt
+
+# External dependency source (not vendored)
+jpc_main/
+
+# Generated experiment outputs
+pi_plots_out/
+
+# Large run artifacts
+backprop_runs/
+pc_runs/
+ilasgn_runs/
+
+# Downloaded/raw datasets
+data/

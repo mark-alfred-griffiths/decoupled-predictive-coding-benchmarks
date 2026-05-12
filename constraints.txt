@@ -1,0 +1,6 @@
+jax==0.5.2
+jax-cuda12-pjrt==0.5.1
+jax-cuda12-plugin==0.5.1
+jaxlib==0.5.1
+jaxtyping==0.3.3
+jpc @ git+https://github.com/thebuckleylab/jpc.git@64eeab0334fe7e1a4365da5b7f02afaefecd0261
