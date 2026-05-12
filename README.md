@@ -71,7 +71,7 @@ The repository centers around comparisons between:
 |---|---|
 | Backpropagation | Conventional gradient-based optimization |
 | Predictive Coding (PC) | Iterative inference-based learning dynamics |
-| IL-ASGN / Decoupled PC | Predictive coding with decoupled or amortized synthetic gradient estimation |
+| Decoupled PC | Predictive coding with decoupled or amortized synthetic gradient estimation |
 
 The decoupled framework explores mechanisms inspired by:
 
