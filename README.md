@@ -405,7 +405,7 @@ Citation metadata and BibTeX entries will be added once accompanying thesis or m
 
 # Contact
 
-Add contact details, institutional affiliation, website, or LinkedIn information here when ready.
+I am a research assistant at KCL. I can be contacted on my personal email markalfredgriffiths@hotmail.com (preferred) or my work email mark.alfred.griffiths@kcl.ac.uk. I can also be contacted via my website: www.mark-alfred-griffiths.tech.
 
 ---
 
